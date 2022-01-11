@@ -2,7 +2,6 @@ const assert = require('assert').strict;
 const fs = require('fs')
 
 const runner = (fn) => {
-  console.log(process.argv);
   if(process.argv.length !== 3) {
     throw new Error("Please pass JSON filename");
   }
